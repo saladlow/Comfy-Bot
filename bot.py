@@ -53,7 +53,7 @@ def thanks(update, context):
     update.message.reply_text(answer)
 
 def pick(update, context):
-    options = context.pass_args
+    options = context.args
     if(len(options) < 2):
         answer = "Dame por lo menos dos opciones, subnormal"
     else:
